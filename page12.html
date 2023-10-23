@@ -1,0 +1,167 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Purchase</title>
+        <script>
+            var productPrices = {
+              'fancy-cookies-a': 5,
+                'fancy-cookies-b': 10,
+                'premium-tea-a': 15,
+                'premium-tea-b': 17,
+                'organic-coffee-a': 25,
+                'organic-coffee-b': 20,
+            };
+    
+            function updateTotal() {
+                var total = 0;
+                for (var productId in productPrices) {
+                    var quantity = parseInt(document.getElementById(productId).value) || 0;
+                    total += productPrices[productId] * quantity;
+                }
+    
+                document.getElementById('total').textContent = 'Tổng cộng: $' + total;
+            }
+           
+  
+
+  // Mã xử lý cho nút "checkout-button"
+  document.addEventListener('DOMContentLoaded', function () {
+      const checkoutButton = document.getElementById('checkout-button');
+
+      checkoutButton.addEventListener('click', function () {
+          var confirmation = confirm('Payment Success. Press OK.');
+      })
+  });
+</script>
+        </script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+          table {
+              border-collapse: collapse;
+              width: 100%;
+          }
+
+          table, th, td {
+              border: 1px solid black;
+              font-size:11px;
+              background: white;
+          }
+          h2{ 
+            text-align: center;
+          }
+  
+          th, td, p {
+            font-weight: bold;
+              padding: 10px;
+              text-align: center;
+          }
+          .product-name {
+  text-align: left ;
+  display: inline-block;
+  width: 150px; /* Điều chỉnh chiều rộng tùy ý */
+}
+#checkout-button {
+    font-size: 15px; /* Đặt kích thước chữ */
+    padding: 10px 20px; /* Đặt khoảng cách từ nội dung đến viền của nút */
+}
+
+      </style>
+    </head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <img src="logo.jpg" alt="Your Logo">
+    <h1>Tea Business E-commerce Store</h1>
+  </header>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="home.html">Home</a>
+    <a href="page1.html">Product</a>
+    <a href="page2.html">Services</a>
+    <a href="page3.html">About Us</a>
+    <a href="page4.html">Contact Us</a>
+   
+    <a class="nav-link" href="page11.html" style="float:right">Gallery</a>
+  </nav>
+  <nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input type="text" id="searchInput" placeholder="Search" style="width: 1200px;height: 50px;"> <!-- Adjust the width here -->
+      <button type="button" onclick="search()" style="height: 50px; background-color: rgb(175, 245, 175);">Search</button>
+  </form>
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+  </nav>
+
+        <h2> LIST OF PRODUCT </h2>
+      
+        <body>
+          <table>
+            <tr>
+              <td>
+                <h3>Fancy Cookies</h3>
+             
+                  <ul>
+                    <li><span class="product-name">Scones</span><input type="number" id="fancy-cookies-a" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Butter Milk Chicken Burger</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Mini Cupcakes</span><input type="number" id="fancy-cookies-a" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Balico coconut bowl</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Turkey Roll</span><input type="number" id="fancy-cookies-a" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Bacon and Egg Burger</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Beef and Vegetable Burger</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Turkey Burger</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Sandwich and Salad Pack</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Grilled Cheese Sandwich</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Chips</span><input type="number" id="fancy-cookies-a" value="0" onchange="updateTotal()"></li>
+                    <li><span class="product-name">Oatmeal Raisin</span><input type="number" id="fancy-cookies-b" value="0" onchange="updateTotal()"></li>
+                  </ul>
+                </td>
+              </td>
+                <td>
+                    <h3>Premium Tea</h3>
+                    <ul>
+                        <li><span class="product-name">Chamomile </span><input type="number" id="premium-tea-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Green Tea and Lemongrass</span><input type="number" id="premium-tea-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Ginger lemon tea </span><input type="number" id="premium-tea-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Earl Grey</span><input type="number" id="premium-tea-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Lavender </span><input type="number" id="premium-tea-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Hibiscus</span><input type="number" id="premium-tea-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Rooibos </span><input type="number" id="premium-tea-a" value="0" onchange="updateTotal()"></li>
+                      </ul>
+                </td>
+                <td>
+                    <h3>Organic Coffee</h3>
+                    <ul>
+                        <li><span class="product-name">Iced Coffee</span><input type="number" id="organic-coffee-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Caramel Macchiato</span> <input type="number" id="organic-coffee-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Vanilla Latte</span><input type="number" id="organic-coffee-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Mocha</span> <input type="number" id="organic-coffee-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Americano</span><input type="number" id="organic-coffee-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Latte</span> <input type="number" id="organic-coffee-b" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Cappuccino</span><input type="number" id="organic-coffee-a" value="0" onchange="updateTotal()"></li>
+                        <li><span class="product-name">Espresso</span> <input type="number" id="organic-coffee-b" value="0" onchange="updateTotal()"></li>
+                        </ul>
+                </td>
+            </tr>
+        </table>
+      <p id="total">Tổng cộng: $0</p>
+  
+      <p><button id="checkout-button">Pay</button></p>
+   
+</body>
+
+      <!-- Footer -->
+  <div class="row"></div>
+  <nav class="topnav">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Tea Business E-commerce Store</a>
+      <a class="nav-link" href="page3.html">Copyright</a>
+      <a class="nav-link" href="page3.html">Privacy Statement</a>
+      <a class="nav-link" href="page2.html">Help & Support</a>
+      <a class="nav-link" href="page4.html">Contact Us</a>
+    </div>
+  </nav>
+</body>
+</html>

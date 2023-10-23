@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu for product</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Fixed quotes in rel and href -->
+    <style>
+        body {
+        font-family: Arial;
+        padding: 10px;
+        background:#bee5f7; 
+         }
+         /* Header/Blog Title */
+ .header {
+  background-color:#ffffff ;
+  color: #0fa539;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  text-align: center;
+  order: 2; /* Change the display order of the title */
+}
+.header img {
+  width: 300px;
+  height: 200px;
+  margin-right: 50px;
+  order: 1; /* Change the display order of the image */
+}
+        /* Add your CSS styling here if needed */
+        table {
+            background-color:#ffffff;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            
+            max-width: 100%;
+            height: auto;
+            width: 200px; /* Đặt chiều rộng cố định */
+            height: 150px; /* Đặt chiều cao cố định */
+        }
+        p {
+            color: black; /* Đặt màu chữ thành đen */
+            font-size: 20px; /* Đặt kích thước chữ lớn hơn (ví dụ 18px) */
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+  <header class="header">
+    <img src="logo.jpg" alt="Your Logo">
+    <h1>Tea Business E-commerce Store</h1>
+  </header>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="home.html">Home</a>
+    <a href="page1.html">Product</a>
+    <a href="page2.html">Services</a>
+    <a href="page3.html">About Us</a>
+    <a href="page4.html">Contact Us</a>
+   
+    <a class="nav-link" href="page11.html" style="float:right">Gallery</a>
+  </nav>
+  <nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input type="text" id="searchInput" placeholder="Search" style="width: 1200px;height: 50px;"> <!-- Adjust the width here -->
+      <button type="button" onclick="search()" style="height: 50px; background-color: rgb(175, 245, 175);">Search</button>
+  </form>
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+  </nav>
+    
+
+    <h1>Organic coffee</h1>
+    <table>
+        <td>
+            
+                <img src="coffee1.jpg" alt="Espresso">
+                <p>Espresso</p>
+                <p><a href="page12.html">Buy</a></p>
+        </td>
+       
+            <td>
+               
+                    <img src="coffee2.png"> 
+                    <p>Cappuccino</p>
+                    <p><a href="page12.html">Buy</a></p>
+                
+            </td>
+        
+            <td>
+                
+                    <img src="coffee3.jpg"> 
+                    <p>Latte</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+            <td>
+               
+                    <img src="coffee4.jpg"> 
+                    <p>Americano</p>
+                    <p><a href="page12.html">Buy</a></p>
+             
+            </td>
+            </tr>
+            <tr>
+            <td>
+                
+                    <img src="coffee5.png" >
+                    <p>Mocha</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+            <td>
+              
+                    <img src="coffee6.jpg" >
+                    <p>Vanilla Latte</p> 
+                    <p><a href="page12.html">Buy</a></p>
+               
+            </td>
+            <td>
+              
+                    <img src="coffee7.jpg">
+                    <p>Iced Coffee</p>
+                    <p><a href="page12.html">Buy</a></p>
+                
+            </td>
+            <td>
+               
+                    <img src="coffee8.png">
+                    <p>Caramel Macchiato</p>
+                    <p><a href="page12.html">Buy</a></p>
+               
+            </td>
+            
+        </tr>
+    </table>
+
+    <h1>Premium Tea </h1>
+    <table>
+        <tr>
+            <td>
+               
+                    <img src="tea1.jpg">
+                    <p>Chamomile</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+            <td>
+               
+                    <img src="tea2.jpg" >
+                    <p>Green Tea and Lemongrass</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+        
+            <td>
+                
+                    <img src="tea3.jpg" >
+                    <p>Ginger lemon tea</p>
+               
+            </td>
+            <td>
+               
+                    <img src="tea4.jpg" >
+                    <p>Earl Grey</p>
+                    <p><a href="page12.html">Buy</a></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+               
+                    <img src="tea5.jpg">
+                    <p>Lavender</p>
+                    <p><a href="page12.html">Buy</a></p>
+                
+            </td>
+            <td>
+               
+                    <img src="tea6.jpg">
+                    <p>Hibiscus</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+            <td>
+             
+                    <img src="tea7.jpg" >
+                    <p>Rooibos</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+        </tr>
+    </table>
+
+    <h1>Fancy Cookies </h1>
+    <table>
+        <tr>
+            <td>
+               
+                    <img src="cookies1.jpg">
+                    <p>Chips</p>
+                    <p><a href="page12.html">Buy</a></p>
+               
+            </td>
+            <td>
+                
+                    <img src="cookies2.jpg" >
+                    <p>Oatmeal Raisin</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+        
+            <td>
+               
+                    <img src="cookies3.jpg" >
+                    <p>Sandwich and Salad Pack</p>
+                    <p><a href="page12.html">Buy</a></p>
+                
+            </td>
+            <td>
+                
+                    <img src="cookies4.jpg" >
+                    <p>Grilled Cheese Sandwich</p>
+                    <p><a href="page12.html">Buy</a></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+              
+                    <img src="cookies5.jpg" >
+                    <p>Beef and Vegetable Burger</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+            <td>
+              
+                    <img src="cookies6.jpg" >
+                    <p>Turkey Burger</p>
+                    <p><a href="page12.html">Buy</a></p>
+                
+            </td>
+            <td>
+               
+                    <img src="cookies7.jpg" >
+                    <p>Bacon and Egg Burger</p>
+                    <p><a href="page12.html">Buy</a></p>
+               
+            </td>
+            <td>
+               
+                    <img src="cookies8.png">
+                    <p>Turkey Roll</p>
+                    <p><a href="page12.html">Buy</a></p>
+              
+            </td>
+        </tr>
+        <tr>
+        <td>
+          
+                <img src="cookies9.png" >
+                <p>Mini Cupcakes</p>
+                <p><a href="page12.html">Buy</a></p>
+           
+        </td>
+        <td>
+            
+                <img src="cookies10.png" >
+                <p>Balico coconut bowl</p>
+                <p><a href="page12.html">Buy</a></p>
+           
+        </td>
+        <td>
+           
+                <img src="cookies11.png">
+                <p>Scones</p>
+                <p><a href="page12.html">Buy</a></p>
+            
+        </td>
+        <td>
+            
+                <img src="cookies12.jpg">
+                <p>Butter Milk Chicken Burger</p>
+                <p><a href="page12.html">Buy</a></p>
+        </td>
+    </tr>
+        </table>
+
+         <!-- Footer -->
+  <div class="row"></div>
+  <nav class="topnav">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Tea Business E-commerce Store</a>
+      <a class="nav-link" href="page3.html">Copyright</a>
+      <a class="nav-link" href="page3.html">Privacy Statement</a>
+      <a class="nav-link" href="page2.html">Help & Support</a>
+      <a class="nav-link" href="page4.html">Contact Us</a>
+    </div>
+  </nav>
+  
+</body>
+</html>

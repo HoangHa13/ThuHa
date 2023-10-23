@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background:#b0effa; 
+}
+
+/* Header/Blog Title */
+.header {
+  background-color:#ffffff ;
+  color: #0fa539;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  text-align: center;
+  order: 2; /* Change the display order of the title */
+}
+.header img {
+  width: 300px;
+  height: 200px;
+  margin-right: 50px;
+  order: 1; /* Change the display order of the image */
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #0c0c0c;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#ffffff;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color:#b0effa;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffffff ;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Cards */
+.card {
+  background-color:#ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.fakeimg {
+  background-color: #daeaf5;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px; /* Set font size */
+  color: #080707; /* Set text color */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #eaf5f8;
+  margin-top: 20px;
+}

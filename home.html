@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> <!-- Fixed charset typo -->
+  <title>Welcome to my website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Fixed quotes in rel and href -->
+  <!-- Your CSS styles go here -->
+  <script>
+  
+
+        // Mã xử lý cho nút "checkout-button"
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkoutButton = document.getElementById('checkout-button');
+
+            checkoutButton.addEventListener('click', function () {
+                var confirmation = confirm('Click on the product you want to buy to go to the Purchase Page. Press OK to continue.');
+            })
+        });
+</script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="logo.jpg" alt="Your Logo">
+    <h1>Tea Business E-commerce Store</h1>
+  </header>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="home.html">Home</a>
+    <a href="page1.html">Product</a>
+    <a href="page2.html">Services</a>
+    <a href="page3.html">About Us</a>
+    <a href="page4.html">Contact Us</a>
+   
+    <a class="nav-link" href="page11.html" style="float:right">Gallery</a>
+  </nav>
+  <nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input type="text" id="searchInput" placeholder="Search" style="width: 1200px;height: 50px;"> <!-- Adjust the width here -->
+      <button type="button" onclick="search()" style="height: 50px; background-color: rgb(175, 245, 175);">Search</button>
+  </form>
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="row">
+    <div class="leftcolumn">
+      <!-- Product Cards -->
+      <div class="card">
+        <a href="page5.html"><h2 style="color: black;">ORGANIC COFFEE</h2></a>
+        <h4>Organic coffee is coffee grown and produced using organic methods, without using chemicals or chemical fertilizers.</h4>
+        <div class="fakeimg" style="height: 300px;">
+          <img src="coffe.png" alt="Mô tả hình ảnh" style="width: 100%; height: 250px; float: left;">
+    </div>
+      </div>
+
+      <div class="card">
+        <a href="page6.html"><h2 style="color: black;">PREMIUM TEA</h2></a>
+        <h4>Premium tea is a high-class tea, usually produced from fresh and high-quality tea leaves, often with a unique and classy flavor.</h4>
+        <div class="fakeimg" style="height: 300px;">
+          <img src="tea.png" alt="Mô tả hình ảnh" style="width: 100%; height: 250px; float: left;">
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="page7.html"><h2 style="color: black;">FANCY COOKIES</h2></a>
+        <h4>Fancy cookies are cookies that often have unique shapes and decorations, often made for special occasions or gifts.</h4>
+        <div class="fakeimg" style="height: 300px;">
+          <img src="cookie.png" alt="Mô tả hình ảnh" style="width: 100%; height: 250px; float: left;">
+        </div>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <!-- Company Information -->
+      <div class="card">
+        <h2>About Our Company</h2>  
+      <div class="fakeimg">
+        <h4>"Welcome to our tea world! We're passionate about tea, crafting exceptional blends from around the world. Pair them with fancy cookies and organic coffee. Our dedicated experts ensure quality. Thank you for your support, enjoy!"</h4> 
+      </div>
+      </div>
+
+      <!-- Purchases -->
+      <div class="card">
+        <a href="page12.html"><h3 style="color: black;">Purchases</h3></a>
+       <form class="form-inline my-2 my-lg-0">
+          <input type="text" id="searchInput" placeholder="Items" style="width: 130px; height: 40px;">
+          <button id="checkout-button"style="height: 40px; background-color: rgb(175, 245, 175);">Go to Checkoout</button>
+         
+        </form>
+        <table>
+          <tr>
+            <th id="cart-items">0 Items</th>
+          </tr>
+          <tr>
+            <th id="cart-subtotal">Cart Sub-total: $0</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Careers -->
+      <div class="card">
+        <h3>Careers</h3>
+        <div class="fakeimg">
+          <a href="page8.html">Driver</a>
+          <h4>"Join our team as a Driver and be part of our tea delivery network."</h4>
+        </div>
+        <div class="fakeimg">
+          <a href="page9.html">Cook</a>
+          <h4>"Discover exciting culinary careers in our tea company's kitchen."</h4>
+        </div>
+        <div class="fakeimg">
+          <a href="page10.html">Baker</a>
+          <h4>"Discover exciting culinary careers in our tea company's kitchen."</h4>
+        </div>
+      </div>
+
+      <!-- Management Team -->
+      <div class="card">
+        <h3><a href="page4.html">Management Team</a></h3>
+        <div class="fakeimg">
+          <h3>Follow Us</h3>
+        <h5>
+          "Join our tea community on social media for the latest updates, flavors, and exclusive offers. Follow us on Facebook, Instagram, Twitter, and Pinterest to savor the tea journey together!"</h5>
+        </div>
+      </div>
+</div>
+    
+
+  <!-- Footer -->
+  <div class="row"></div>
+  <nav class="topnav">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Tea Business E-commerce Store</a>
+      <a class="nav-link" href="page3.html">Copyright</a>
+      <a class="nav-link" href="page3.html">Privacy Statement</a>
+      <a class="nav-link" href="page2.html">Help & Support</a>
+      <a class="nav-link" href="page4.html">Contact Us</a>
+    </div>
+  </nav>
+</body>
+</html>

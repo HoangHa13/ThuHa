@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div.gallery {
+      border: 1px solid #ccc;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      float: left;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* CSS để căn giữa h2 và h4 về bên trái */
+    .center-text {
+      text-align: center ;
+    }
+    h2 {
+      font-size: 30px; /* Kích thước phông */
+      color: #070101;} 
+   
+   p{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 30px;
+   }
+   .gallery {
+    background-color: #fff; /* Đặt màu nền thành màu trắng (#fff) */
+  }
+</style>
+<head>
+  <meta charset="utf-8"> <!-- Fixed charset typo -->
+  <title>Welcome to my website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Fixed quotes in rel and href -->
+  <!-- Your CSS styles go here -->
+</head>
+</head>
+<body>
+ <!-- Header -->
+ <header class="header">
+  <img src="logo.jpg" alt="Your Logo">
+  <h1>Tea Business E-commerce Store</h1>
+</header>
+
+<!-- Top Navigation -->
+<nav class="topnav">
+  <a href="home.html">Home</a>
+  <a href="page1.html">Product</a>
+  <a href="page2.html">Services</a>
+  <a href="page3.html">About Us</a>
+  <a href="page4.html">Contact Us</a>
+ 
+  <a class="nav-link" href="page11.html" style="float:right">Gallery</a>
+</nav>
+<nav>
+  <form class="form-inline my-2 my-lg-0">
+    <input type="text" id="searchInput" placeholder="Search" style="width: 1200px;height: 50px;"> <!-- Adjust the width here -->
+    <button type="button" onclick="search()" style="height: 50px; background-color: rgb(175, 245, 175);">Search</button>
+</form>
+  <div id="searchResults">
+    <!-- Search results will be displayed here -->
+  </div>
+</nav>
+<!-- Thêm lớp center-text cho h2 và h4 -->
+<h2 class="center-text">Responsive Image Gallery</h2>
+
+<h4 class="center-text">Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+   <a target="_blank" href="gall1.jpg">
+      <img src="gall1.jpg" alt="Cinque Terre" width="600" height="450">
+    </a>
+    <div class="desc"style="font-size: 20px; font-weight: bold;"> 
+      <a href="home.html">Cinque Terre</a>
+         </div>
+  </div>
+</div>
+
+<div class="responsive">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall2.jpg">
+      <img src="gall2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"style="font-size: 20px; font-weight: bold;">
+      <a href="home.html"> Forest </a></div>
+  </div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall3.jpg">
+      <img src="gall3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"style="font-size: 20px; font-weight: bold;">
+      <a href="home.html"> Northern Lights</a> </div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall3.jpg">
+      <img src="gall4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"style="font-size: 20px; font-weight: bold;">
+      <a href="home.html"> Mountains </a> </div>
+  </div>
+</div>
+
+<p>
+  "Within Australia, a land of remarkable natural beauty, you'll find the breathtaking scenes depicted above. Australia, being a culturally diverse nation, places great emphasis on the quality of life. Likewise, we are unwavering in our commitment to delivering the finest products to our cherished customers."
+</p>
+<p>
+  "The joy and satisfaction of our customers remain the driving force behind our continuous growth and improvement."
+</p>
+<p>
+  "We are delighted to extend our warmest welcome to you, and we eagerly look forward to serving you again soon!"
+</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall5.webp">
+      <img src="gall5.webp"alt="#" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall12.jpg">
+      <img src="gall12.jpg" alt="#" width="600" height="400">
+    </a>
+   
+  </div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall10.jpg">
+      <img src="gall10.jpg" alt="#" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall11.jpg">
+      <img src="gall11.jpg" alt="#" width="600" height="400">
+    </a>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall9.jpg">
+      <img src="gall9.jpg"alt="#" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall8.jpg">
+      <img src="gall8.jpg" alt="#" width="600" height="400">
+    </a>
+   
+  </div>
+</div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall7.jpg">
+      <img src="gall7.jpg" alt="#" width="600" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gall6.jpg">
+      <img src="gall6.jpg" alt="#" width="600" height="400">
+    </a>
+   
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div style="padding:6px;"></div>
+  <!-- Footer -->
+  <div class="row"></div>
+  <nav class="topnav">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Tea Business E-commerce Store</a>
+      <a class="nav-link" href="page3.html">Copyright</a>
+      <a class="nav-link" href="page3.html">Privacy Statement</a>
+      <a class="nav-link" href="page2.html">Help & Support</a>
+      <a class="nav-link" href="page4.html">Contact Us</a>
+    </div>
+  </nav>
+</body>
+</html>
